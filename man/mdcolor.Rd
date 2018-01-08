@@ -16,3 +16,8 @@ Extending the Markdown markup language with syntax for changing
              the R package is based on a JavaScript
              library called \code{mdcolor.js}.
 }
+\details{
+All of R colors are supported by \code{mdcolor} package.
+you can see the name of R colors by typing \code{color()}
+function.
+}

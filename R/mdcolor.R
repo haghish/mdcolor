@@ -1,3 +1,7 @@
+#' All of R colors are supported by \code{mdcolor} package.
+#' you can see the name of R colors by typing \code{color()}
+#' function.
+
 #' @title Font and Text background Color in Markdown
 #' @description Extending the Markdown markup language with syntax for changing
 #'              the font color and the text background color in the document.

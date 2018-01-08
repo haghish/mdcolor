@@ -11,6 +11,7 @@ knitr::opts_chunk$set(echo = TRUE )
 ```
 
 ```{r, echo=FALSE, results='asis'}
+library(mdcolor)
 mdcolor()
 ```
 
@@ -41,4 +42,7 @@ This is an R [-yellow] Markdown document[#] . [-purple]Markdown[#] is a simple f
 As you can see, the `mdcolor` package can bring colors to Markdown documents, allowing to change text color or highlight it... 
 
 **GitHub Repository**:  https://github.com/haghish/mdcolor
+
+All [-hotpink]R[#] [orangered]colors[#] 
+are [-greenyellow][orange]**AVAILABL**[#][#]
 
