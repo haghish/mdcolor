@@ -8,13 +8,6 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE )
-
-require(mdcolor)
-
-#Create myheader.html
-fileConn <- file("myheader.html")
-writeLines('<meta http-equiv="X-UA-Compatible" content="IE=edge" />', fileConn)
-close(fileConn)
 ```
 
 ```{r, echo=FALSE, results='asis'}
