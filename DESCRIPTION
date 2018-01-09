@@ -1,12 +1,15 @@
 Package: mdcolor
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Syntax for changing text color within R Markdown documents
+Version: 0.3.0
+Author: E. F. Haghish
+Maintainer: E. F. Haghish <haghish@imbi.uni-freiburg.de>
+Description: Provides simplistic syntax for changing text color, 
+     highlighting text, and styling text within R Markdown or 
+     R Html documents. 
+License: MIT + file LICENSE 
+URL: https://github.com/haghish/mdcolor
+BugReports: https://github.com/haghish/mdcolor/issues
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
