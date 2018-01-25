@@ -1,6 +1,6 @@
 Package: mdcolor
 Type: Package
-Title: Syntax for changing text color within R Markdown documents
+Title: Syntax for Changing Text Color Within R Markdown Documents
 Version: 0.3.0
 Author: E. F. Haghish
 Maintainer: E. F. Haghish <haghish@imbi.uni-freiburg.de>

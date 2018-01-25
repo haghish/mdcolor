@@ -1,0 +1,88 @@
+---
+title: "`mdcolor` Example"
+output: html_notebook
+---
+
+
+```{r, echo=FALSE, results='asis'}
+library(mdcolor)
+mdcolor()
+```
+
+The `mdcolor` package allows you to [red]change text color [#] 
+and [-orange] highlight text [#] in your document. `mdcolor` 
+is fully compatible with *Markdown* syntax, but only is 
+interpretable in HTML documents and slides. The main purpose 
+of the package is further motivating students to use Rmarkdown 
+and also, allow teachers/bloggers to produce more interesting 
+documents by changing text color or highlighting text.
+
+#### Where can it be applied?
+
+`mdcolor` can change the text color anywhere in the document, 
+including text paragraphs, headers, etc... 
+
+
+
+#### [blue]Adding color to Rmarkdown[#]
+
+`mdcolor` supports [-yellow]all R colors[#]. However, 
+colors [-greenyellow][red]**MUST**[#][#] be specified 
+by their name. If you don't know the R color names, type:
+
+```{r, results='hide'}
+colors()
+```
+
+More importantly, you need to include the results of the 
+`mdcolor()` function `asis` inside the HTML document to 
+append the required code for color interpretation. To do so, 
+add the following code to your Rmarkdown document or slides:
+
+
+<pre>
+[red]
+&#96;&#96;&#96;{r, echo=FALSE, results='asis'}  
+library(mdcolor)
+mdcolor()
+&#96;&#96;&#96;
+[#]
+</pre>
+
+
+
+General Syntax
+==============
+
+The general syntax for using `mdcolor` is as follows:
+
+1. [red]Changing text color[#] = [`colorname`] text [`#`]
+2. [blue]Highlighting text color[#] = [`-colorname`] text [`#`]
+
+Note that for highlighting text, the color name _begins with a 
+minus_!
+
+The `[hash]` sign is a preserved closing marker that ends 
+the previous `mdcolor` code. You can find out more about 
+`mdcolor` or further colaborate on the code in the GitHub 
+repository https://github.com/haghish/mdcolor
+
+
+Using `mdcolor` on the web
+==========================
+
+`mdcolor` is not limited to **R** and can be used on any website
+or HTML document to highlight text using the specified 
+syntax. To do so, you can simply source the [JavaScript file in your document!](https://raw.githubusercontent.com/haghish/mdcolor/master/inst/mdcolor.js) 
+
+
+[red]
+
+~~~
+[red]<script src=[#][darkgreen]"https://raw.githubusercontent.com/haghish/mdcolor/master/inst/mdcolor.js"[#][red]></script>[#]
+~~~
+
+-----------
+
+**All these colors were added using `mdcolor` and `Rmarkdown`!**
+
